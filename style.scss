@@ -46,7 +46,8 @@ body{
   cursor: pointer;
   display: flex;
   align-items: center;
-  transition: transform, font-size 0.2s ease 0s;
+  justify-content: center;
+  transition: transform, font-size 0.16s linear 0s;
   &--rotate-to-left{
     transform: rotate(-30deg);
   }
@@ -82,16 +83,14 @@ body{
   }
   &:hover{
     font-size: 40px;
-    line-height: 47px;
   }
   &:active{
     font-size: 36px;
-    line-height: 42px;
   }
 }
 .icon{
   fill: #fff;
-  width: 32px;
-  height: 32px;
+  width: 1.15em;
+  height: 1.2em;
   margin-right: 0.3em;
 }
