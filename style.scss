@@ -39,14 +39,14 @@ body{
   background-color: #0478B9;
   padding: 0.575em 1.18em;
   font-size: 28px;
-  line-height: 33px;
+  line-height: 32px;
   color: #fff;
   border: none;
   outline: none;
   cursor: pointer;
   display: flex;
   align-items: center;
-  transition: transform, font-size, line-height 0.2s ease;
+  transition: transform, font-size 0.2s ease 0s;
   &--rotate-to-left{
     transform: rotate(-30deg);
   }
@@ -91,7 +91,7 @@ body{
 }
 .icon{
   fill: #fff;
-  width: 1.15em;
-  height: 1.2em;
+  width: 32px;
+  height: 32px;
   margin-right: 0.3em;
 }
