@@ -45,6 +45,7 @@ body{
   outline: none;
   cursor: pointer;
   display: flex;
+  border-bottom: none;
   align-items: center;
   justify-content: center;
   transition: transform, font-size 0.16s linear 0s;
