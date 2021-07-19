@@ -47,30 +47,21 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  --rotate: 0deg;
+  --scale: 1;
+  transform: rotate(var(--rotate)) scale(var(--scale));
   transition: transform, font-size 0.16s linear 0s;
   &--rotate-to-left{
-    transform: rotate(-30deg);
+    --rotate: -30deg;
   }
   &--rotate-to-right{
-    transform: rotate(45deg);
+    --rotate: 45deg;
   }
   &--scale-increase{
-    transform: scale(2);
+    --scale: 2;
   }
   &--scale-decrease{
-    transform: scale(0.5);
-  }
-  &--rotate-to-left#{&}--scale-increase{
-    transform: rotate(-30deg) scale(2);
-  }
-  &--rotate-to-left#{&}--scale-decrease{
-    transform: rotate(-30deg) scale(0.5);
-  }
-  &--rotate-to-right#{&}--scale-increase{
-    transform: rotate(45deg) scale(2);
-  }
-  &--rotate-to-right#{&}--scale-decrease{
-    transform: rotate(45deg) scale(0.5);
+    --scale: 0.5;
   }
   &--bg-color{
     background-color: #B90404;
